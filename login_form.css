@@ -130,11 +130,11 @@ border: none;
 font-size: 1rem;
 }
 
-.button {
+.button-tag {
 text-align: center;
 }
 
-.button button {
+.button-tag button {
 width: 30%;
 padding: 1rem;
 border-radius: 12px;
@@ -146,7 +146,7 @@ cursor: pointer;
 flex-wrap: wrap;
 }
 
-.button button:hover {
+.button-tag button:hover {
 background-color: rgb(43, 90, 43);
 }
 
@@ -168,7 +168,7 @@ width: fit-content;
     order: 1;
 }
 
-.button{
+.button-tag{
     width: 74vw;
     margin-left: 5%;
 }

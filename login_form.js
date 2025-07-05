@@ -8,7 +8,7 @@ let main_text = document.querySelector('.main-text');
 
 let form_tag = document.querySelector('.form');
 
-let button_tag = document.querySelector('.button');
+let button_tag = document.querySelector('.button-tag');
 
 let isSignUpMode = false;
 
@@ -19,7 +19,7 @@ function changeFunction() {
 
         under_text.innerHTML = '';
 
-        sign_up_button.innerHTML = '< Back To LogIn';
+        sign_up_button.textContent = '< Back To LogIn';
 
         main_text.innerHTML = 'Sign Up With';
 
@@ -64,12 +64,12 @@ function changeFunction() {
 
             sessionStorage.setItem("activeUserName",UserName)
 
-            window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/todo.html';        
+            window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/todo.html';
         });
     }
 
     else{
-        new_user_text.innerHTML = 'New User ?';
+        new_user_text.textContent = 'New User ?';
 
         under_text.innerHTML = "Sign up here and make your TODO's list";
         
@@ -101,8 +101,7 @@ function changeFunction() {
             }
             
             if(found){
-                window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/todo.html';
-            }
+                window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/todo.html';            }
             else{
                 alert('Incorrect E-mail or Password');
             }

@@ -1,4 +1,7 @@
 let activeUser = sessionStorage.getItem('activeUser');
+if (!activeUser) {
+  window.location.href = 'index.html'; // redirect to login
+}
 
     console.log(`Welcome ${activeUser}`);
 
@@ -7,10 +10,8 @@ let activeUser = sessionStorage.getItem('activeUser');
     document.querySelector('.userGreetings').innerHTML = `👋&nbsp;<span class="username-highlight">${userName}&nbsp;</span><span>!</span>`;
 
     document.querySelector('.logout_button').addEventListener("click", function(){
-        sessionStorage.removeItem('activeUser');
-        sessionStorage.removeItem('activeuserName');
-        window.location.href = 'http://127.0.0.1:5500/index.html';
-    })
+        sessionStorage.clear();
+        window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/index.html';    })
 
     window.addEventListener('DOMContentLoaded',function(){
         const savedTheme = this.localStorage.getItem('themePreference');
@@ -138,7 +139,7 @@ let activeUser = sessionStorage.getItem('activeUser');
     document.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         if (inputText.value.trim() && dateInput.value && timeInput.value.trim()) {
-            add(); 
+            add();
         } else {
             alert("Please fill in all fields before pressing Enter.");
         }
