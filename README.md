@@ -46,7 +46,7 @@ A sleek, responsive, and animated TODO list web app powered by HTML, CSS, and Ja
  ---
 
 ## 🌐 Live Demo
-[🔗 Check it out here](https://maheshwaran6953.github.io/TODO_PROJECT/)
+[🔗 Check it out here](https://maheshwaran6953.github.io/TODO_PROJECT)
 
  ---
 
