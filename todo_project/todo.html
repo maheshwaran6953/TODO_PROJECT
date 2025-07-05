@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="top_values">
+        <h1 class="tittle">TOD<span class="letter-o">O</span> LIST</h1>
+        <button class="theme-button" onclick="theme()"><i class='bx bx-moon'></i></button>
+        <button class="logout_button">
+            <i class='bx bx-log-out'></i> Log out
+        </button>
+    </div>
+    <p class="userGreetings">Hello ! USER_NAME</p>
+    <div class="todo_input_grid">
+
+        <input type="text" class="input" placeholder="Enter your task here" required>
+
+        <button onclick="add()" class="add">Add</button>
+
+        <input type="date" class="date" required>
+
+        <input type="time" class="time" placeholder="hh:mm">
+
+    </div>
+    <button class="clear" onclick="clearAll()">Clear All TODO'S</button>
+    <div class="division division_grid">
+        
+    </div>
+
+    <script src="todo.js">
+    </script>
+
+</body>
+
+</html>

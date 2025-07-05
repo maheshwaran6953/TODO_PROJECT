@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17.5px;
+    background-color: #eafaf2;
+    transition: background .5s, color .5s;
+}
+
+.top_values{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 3%;
+}
+
+.tittle{
+    align-items: stretch;
+    color: rgb(8, 35, 8);
+}
+
+.letter-o{
+    color: rgb(8, 35, 8);
+}
+
+.theme-button{
+    width: 4%;
+    height: 40px;
+    margin-left: 65%;
+    margin-top: .5%;
+    background-color: rgb(23, 74, 23);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout_button{
+    color: #f5f7f6;
+    flex-direction: row;
+    border: none;
+    padding: 0px 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+    align-items: center;
+    background-color: rgb(23, 74, 23);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+.logout_button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.userGreetings{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0px 0px 3.2%;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.username-highlight{
+    color: rgb(23, 74, 23);
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.todo_input_grid{
+    margin: 0% auto;
+    display: flex;
+    background: rgba(176, 162, 162, 0.25);
+    border-radius: 15px;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 150px;
+    justify-content: center;
+    box-shadow: 1px 5px 10px 1px rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(5px);
+    border: .5px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.input{
+    padding: 15px;
+    width: 280px;
+    height: 20px;
+    font-size: 17px;
+    margin: 03% 0px 0px 0.5%;
+    border: none;
+    border-radius: 15px;
+}
+
+.add{
+    font-size: 15px;
+    margin: 3% 0px 0px 10px;
+    height: 48px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(23, 74, 23);
+    color: #f5f7f6;
+    cursor: pointer;
+}
+
+.date{
+    padding: 15px;
+    width: 175px;
+    height: 20px;
+    font-size: 17px;
+    margin: 2% -20px 3% 2%;
+    border: none;
+    border-radius: 15px;
+}
+
+.time{
+    padding: 15px;
+    width: 175px;
+    height: 20px;
+    font-size: 17px;
+    margin: 2% 7px 0px 25px ;
+    border: none;
+    border-radius: 15px;
+}
+
+.clear{
+    border: none;
+    background-color: transparent;
+    color: #2196F3;
+    font-size: medium;
+    margin-top: 2%;
+    margin: 1.5%;
+    cursor: pointer;
+}
+
+.todo_card {
+    background: linear-gradient(135deg, #e1fbee 80%, #d0f5e8 100%);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+    padding: 18px 15px;
+    margin: 18px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 2fr 1.8fr 1.3fr 90px 90px;
+    text-transform: capitalize;
+}
+
+.delete{
+    width: 80px;
+    height: 35px;
+    background-color: #f44336;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.edit{
+    width: 80px;
+    height: 35px;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+body.dark-theme {
+    background: #181c1f;
+    color: #f5f7f6;
+}
+
+body.dark-theme .tittle{
+    color: #f5f7f6;
+}
+
+body.dark-theme .username-highlight{
+    color: #ffd369;
+}
+
+body.dark-theme .letter-o{
+    color: #ffd369;
+}
+
+body.dark-theme .theme-button{
+    background-color: #030303;
+    transition: .7s ease;
+}
+
+body.dark-theme .theme-button:hover{
+    background-color: #393e46;
+    color: #ffd369;
+}
+
+body.dark-theme .todo_input_grid,
+body.dark-theme .division_grid,
+body.dark-theme .todo_card {
+    background: rgba(34, 40, 49, 0.85);
+    color: #f5f7f6;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.25);
+}
+
+body.dark-theme .add,
+body.dark-theme .edit,
+body.dark-theme .delete,
+body.dark-theme .logout_button {
+    background-color: #030303;
+    color: #f5f7f6;
+    border: 1px solid #393e46;
+    transition: .7s ease;
+}
+
+body.dark-theme .add:hover,
+body.dark-theme .edit:hover,
+body.dark-theme .delete:hover,
+body.dark-theme .logout_button:hover {
+    background-color: #393e46;
+    color: #ffd369;
+}
+
+@media (max-width: 600px) {
+    .tittle{
+        font-size: 20px;
+        display: flex;
+    }
+    .userGreetings{
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    .theme-button{
+        margin-left: 30%;
+        width: 50px;
+        border-radius: 50px;
+        border: none;
+    }
+    .logout_button{
+        margin-right: 1%;
+    }
+    .todo_input_grid{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .input, .date, .time, .add {
+        width: 80vw;
+        min-width: 0;
+        margin: 8px 0;
+        font-size: 15px;
+    }
+    .input{
+        order: 1;
+    }
+    .date{
+        order: 2;
+    }
+    .time{
+        order: 3;
+    }
+    .add{
+        order: 4;
+        margin-left: 0;
+        width: 100%;
+        min-width: 0;
+    }
+    .todo_card{
+        display: grid;
+        text-align: center;
+        width: 95vw;
+        max-width: 400px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 5%;
+    }
+    .edit, .delete{
+        width: 100%;
+        cursor: pointer;
+        margin: 0;
+    }
+}
+

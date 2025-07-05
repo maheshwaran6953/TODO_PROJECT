@@ -1,0 +1,176 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body {
+background-color: #f5f5f5;
+font-family: sans-serif;
+}
+
+.container {
+display: flex;
+transform: translateY(10);
+flex-direction: row;
+justify-content: center;
+align-items: stretch;
+padding: 2rem;
+min-height: 100vh;
+gap: 2rem;
+}
+
+.vertical-green-color {
+background-color: rgb(23, 74, 23);
+color: #f5f5f5;
+padding: 2rem;
+border-radius: 10px;
+display: flex;
+flex: 1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+}
+
+.new-user-text {
+font-size: 2rem;
+text-align: center;
+margin-top: 0%;
+}
+
+.under-text {
+font-size: 18px;
+letter-spacing: 0.5px;
+margin: 6% 0px 0px 0%;
+text-align: center;
+}
+
+.vertical-green-color button {
+border: none;
+border-radius: 15px;
+width: 150px;
+height: 40px;
+background-color: white;
+margin: 6% 0px 0px 0%;
+cursor: pointer;
+font-size: 18px;
+}
+
+button:hover {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+transition: 0.5s ease;
+}
+
+.signup::after{
+    border: none;
+}
+
+.side-text {
+flex: 2;
+margin-top: 0%;
+padding: 2%;
+background-color: #fff;
+border-radius: 10px;
+}
+
+.main-text {
+text-align: center;
+font-size: 2.5rem;
+font-weight: bold;
+color: black;
+margin-top: 14%;
+margin-bottom: 2%;
+}
+
+.google-logo {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-bottom: 2%;
+}
+
+.google-logo img {
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+.divider {
+display: flex;
+justify-content: center;
+flex-direction: row;
+margin: 2%;
+color: darkgrey;
+}
+
+.divider::before,
+.divider::after {
+content: "";
+flex: 1;
+height: 1px;
+background-color: #ddd;
+margin: 1.5% 2%;
+}
+
+.form {
+display: flex;
+gap: 1rem;
+flex-direction: column;
+margin: 1rem;
+}
+
+.form input {
+padding: 15px;
+border-radius: 12px;
+background-color: rgb(212, 233, 212);
+border: none;
+font-size: 1rem;
+}
+
+.button {
+text-align: center;
+}
+
+.button button {
+width: 30%;
+padding: 1rem;
+border-radius: 12px;
+border: none;
+background-color: rgb(23, 74, 23);
+color: white;
+font-size: 1.2rem;
+cursor: pointer;
+flex-wrap: wrap;
+}
+
+.button button:hover {
+background-color: rgb(43, 90, 43);
+}
+
+.signup-page button {
+width: fit-content;
+}
+
+@media (max-width: 768px) {
+.container {
+    flex-direction: column;
+}
+
+.vertical-green-color{
+    order: 2;
+}
+
+.side-text button {
+    width: 100%;
+    order: 1;
+}
+
+.button{
+    width: 74vw;
+    margin-left: 5%;
+}
+}
+
