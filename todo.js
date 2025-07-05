@@ -21,7 +21,7 @@ let activeUser = sessionStorage.getItem('activeUser');
         }
         else{
             document.body.classList.remove('dark-theme');
-            document.querySelector('i').className('bx bx-moon');
+            document.querySelector('i').className = 'bx bx-moon';
         }
     });
 

@@ -64,7 +64,7 @@ function changeFunction() {
 
             sessionStorage.setItem("activeUserName",UserName)
 
-            window.location.href = 'http://127.0.0.1:5500/todo_project/todo.html';
+            window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/todo.html';        
         });
     }
 
@@ -101,7 +101,7 @@ function changeFunction() {
             }
             
             if(found){
-                window.location.href = 'http://127.0.0.1:5500/todo_project/todo.html';
+                window.location.href = 'https://maheshwaran6953.github.io/TODO_PROJECT/todo.html';
             }
             else{
                 alert('Incorrect E-mail or Password');
